@@ -13,6 +13,8 @@ Route::get('book/{id}', [BookController::class, 'show']);
 Route::post('book', [BookController::class, 'store']);
 Route::put('book/{id}', [BookController::class, 'update']);
 Route::delete('book/{id}', [BookController::class, 'destroy']);
-
+Route::get('users', [UserController::class, 'index']);
+Route::get('users/{id}', [UserController::class, 'show']);
+Route::post('users', [UserController::class, 'store']);
 
 });
